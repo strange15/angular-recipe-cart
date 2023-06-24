@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-recipe-cart';
+  currentTab = 'recipes';
+
+  onChangeTab(tab: string) {
+    this.currentTab = tab;
+  }
 }
